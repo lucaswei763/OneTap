@@ -10,43 +10,14 @@
 		5AB1391330599A1D00E56D97 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB1391230599A1D00E56D97 /* GRDB */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5AB138F5305999C700E56D97 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5AB138DF305999C600E56D97 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5AB138E6305999C600E56D97;
-			remoteInfo = OneTap;
-		};
-		5AB138FF305999C700E56D97 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5AB138DF305999C600E56D97 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5AB138E6305999C600E56D97;
-			remoteInfo = OneTap;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		5AB138E7305999C600E56D97 /* OneTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AB138F4305999C700E56D97 /* OneTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AB138FE305999C700E56D97 /* OneTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5AB138E9305999C600E56D97 /* OneTap */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = OneTap;
-			sourceTree = "<group>";
-		};
-		5AB138F7305999C700E56D97 /* OneTapTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OneTapTests;
-			sourceTree = "<group>";
-		};
-		5AB13901305999C700E56D97 /* OneTapUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = OneTapUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -60,20 +31,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AB138F1305999C700E56D97 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AB138FB305999C700E56D97 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,8 +38,6 @@
 			isa = PBXGroup;
 			children = (
 				5AB138E9305999C600E56D97 /* OneTap */,
-				5AB138F7305999C700E56D97 /* OneTapTests */,
-				5AB13901305999C700E56D97 /* OneTapUITests */,
 				5AB138E8305999C600E56D97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				5AB138E7305999C600E56D97 /* OneTap.app */,
-				5AB138F4305999C700E56D97 /* OneTapTests.xctest */,
-				5AB138FE305999C700E56D97 /* OneTapUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,52 +76,6 @@
 			productReference = 5AB138E7305999C600E56D97 /* OneTap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5AB138F3305999C700E56D97 /* OneTapTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AB1390B305999C700E56D97 /* Build configuration list for PBXNativeTarget "OneTapTests" */;
-			buildPhases = (
-				5AB138F0305999C700E56D97 /* Sources */,
-				5AB138F1305999C700E56D97 /* Frameworks */,
-				5AB138F2305999C700E56D97 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5AB138F6305999C700E56D97 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5AB138F7305999C700E56D97 /* OneTapTests */,
-			);
-			name = OneTapTests;
-			packageProductDependencies = (
-			);
-			productName = OneTapTests;
-			productReference = 5AB138F4305999C700E56D97 /* OneTapTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5AB138FD305999C700E56D97 /* OneTapUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AB1390E305999C700E56D97 /* Build configuration list for PBXNativeTarget "OneTapUITests" */;
-			buildPhases = (
-				5AB138FA305999C700E56D97 /* Sources */,
-				5AB138FB305999C700E56D97 /* Frameworks */,
-				5AB138FC305999C700E56D97 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5AB13900305999C700E56D97 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				5AB13901305999C700E56D97 /* OneTapUITests */,
-			);
-			name = OneTapUITests;
-			packageProductDependencies = (
-			);
-			productName = OneTapUITests;
-			productReference = 5AB138FE305999C700E56D97 /* OneTapUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,14 +88,6 @@
 				TargetAttributes = {
 					5AB138E6305999C600E56D97 = {
 						CreatedOnToolsVersion = 26.6;
-					};
-					5AB138F3305999C700E56D97 = {
-						CreatedOnToolsVersion = 26.6;
-						TestTargetID = 5AB138E6305999C600E56D97;
-					};
-					5AB138FD305999C700E56D97 = {
-						CreatedOnToolsVersion = 26.6;
-						TestTargetID = 5AB138E6305999C600E56D97;
 					};
 				};
 			};
@@ -210,28 +109,12 @@
 			projectRoot = "";
 			targets = (
 				5AB138E6305999C600E56D97 /* OneTap */,
-				5AB138F3305999C700E56D97 /* OneTapTests */,
-				5AB138FD305999C700E56D97 /* OneTapUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5AB138E5305999C600E56D97 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AB138F2305999C700E56D97 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AB138FC305999C700E56D97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -248,34 +131,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AB138F0305999C700E56D97 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AB138FA305999C700E56D97 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5AB138F6305999C700E56D97 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5AB138E6305999C600E56D97 /* OneTap */;
-			targetProxy = 5AB138F5305999C700E56D97 /* PBXContainerItemProxy */;
-		};
-		5AB13900305999C700E56D97 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5AB138E6305999C600E56D97 /* OneTap */;
-			targetProxy = 5AB138FF305999C700E56D97 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5AB13906305999C700E56D97 /* Debug */ = {
@@ -482,108 +338,6 @@
 			};
 			name = Release;
 		};
-		5AB1390C305999C700E56D97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PR495F79U4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = myself.OneTapTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneTap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OneTap";
-				XROS_DEPLOYMENT_TARGET = 26.5;
-			};
-			name = Debug;
-		};
-		5AB1390D305999C700E56D97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PR495F79U4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = myself.OneTapTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneTap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OneTap";
-				XROS_DEPLOYMENT_TARGET = 26.5;
-			};
-			name = Release;
-		};
-		5AB1390F305999C700E56D97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PR495F79U4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = myself.OneTapUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = OneTap;
-				XROS_DEPLOYMENT_TARGET = 26.5;
-			};
-			name = Debug;
-		};
-		5AB13910305999C700E56D97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PR495F79U4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = myself.OneTapUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = OneTap;
-				XROS_DEPLOYMENT_TARGET = 26.5;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,24 +355,6 @@
 			buildConfigurations = (
 				5AB13909305999C700E56D97 /* Debug */,
 				5AB1390A305999C700E56D97 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5AB1390B305999C700E56D97 /* Build configuration list for PBXNativeTarget "OneTapTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AB1390C305999C700E56D97 /* Debug */,
-				5AB1390D305999C700E56D97 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5AB1390E305999C700E56D97 /* Build configuration list for PBXNativeTarget "OneTapUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AB1390F305999C700E56D97 /* Debug */,
-				5AB13910305999C700E56D97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
