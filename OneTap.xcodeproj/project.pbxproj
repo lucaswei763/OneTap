@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5AB1391330599A1D00E56D97 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB1391230599A1D00E56D97 /* GRDB */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5AB138F5305999C700E56D97 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB1391330599A1D00E56D97 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = OneTap;
 			packageProductDependencies = (
+				5AB1391230599A1D00E56D97 /* GRDB */,
 			);
 			productName = OneTap;
 			productReference = 5AB138E7305999C600E56D97 /* OneTap.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 5AB138DE305999C600E56D97;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5AB1391130599A1D00E56D97 /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5AB138E8305999C600E56D97 /* Products */;
 			projectDirPath = "";
@@ -615,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5AB1391130599A1D00E56D97 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5AB1391230599A1D00E56D97 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5AB1391130599A1D00E56D97 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5AB138DF305999C600E56D97 /* Project object */;
 }
