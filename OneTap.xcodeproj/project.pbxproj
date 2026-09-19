@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A8A2792305EBAE9009887F1 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 5A8A2791305EBAE9009887F1 /* AlertToast */; };
 		5AB1391330599A1D00E56D97 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 5AB1391230599A1D00E56D97 /* GRDB */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AB1391330599A1D00E56D97 /* GRDB in Frameworks */,
+				5A8A2792305EBAE9009887F1 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +73,7 @@
 			name = OneTap;
 			packageProductDependencies = (
 				5AB1391230599A1D00E56D97 /* GRDB */,
+				5A8A2791305EBAE9009887F1 /* AlertToast */,
 			);
 			productName = OneTap;
 			productReference = 5AB138E7305999C600E56D97 /* OneTap.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				5AB1391130599A1D00E56D97 /* XCRemoteSwiftPackageReference "GRDB" */,
+				5A8A2790305EBAE9009887F1 /* XCRemoteSwiftPackageReference "AlertToast" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5AB138E8305999C600E56D97 /* Products */;
@@ -362,6 +366,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		5A8A2790305EBAE9009887F1 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.9;
+			};
+		};
 		5AB1391130599A1D00E56D97 /* XCRemoteSwiftPackageReference "GRDB" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/groue/GRDB.swift";
@@ -373,6 +385,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5A8A2791305EBAE9009887F1 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A8A2790305EBAE9009887F1 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
 		5AB1391230599A1D00E56D97 /* GRDB */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5AB1391130599A1D00E56D97 /* XCRemoteSwiftPackageReference "GRDB" */;

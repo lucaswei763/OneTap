@@ -1,6 +1,15 @@
 {
-  "originHash" : "d77223ea3cadaebd2154378ec5005b6ebefcef3b34a4dafa368b0c4f16c0561c",
+  "originHash" : "042fe0a54c66f8ce89e40d82aafbb0866fe44eac112804968c5be04e0f000762",
   "pins" : [
+    {
+      "identity" : "alerttoast",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elai950/AlertToast.git",
+      "state" : {
+        "revision" : "b39252eacd159904afd7d718bba0afabb87f2f2f",
+        "version" : "1.3.9"
+      }
+    },
     {
       "identity" : "grdb.swift",
       "kind" : "remoteSourceControl",
