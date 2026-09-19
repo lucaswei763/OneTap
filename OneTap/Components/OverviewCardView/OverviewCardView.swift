@@ -9,18 +9,19 @@ import SwiftUI
 
 // MARK: - 资产概览卡片
 struct OverviewCardView: View {
-    @State private var viewModel = OverviewCardViewModel(monthlyIncome: 1000, monthlyExpense: -1500)
-    
+    @Environment(\.database) private var database
+    @StateObject private var viewModel = OverviewCardViewModel()
+
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("本月结余")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
-            
+
             Text("\(viewModel.monthlyRemaining, format: .currency(code: "CNY"))")
                 .font(.system(size: 34, weight: .bold, design: .rounded))
                 .foregroundStyle(.primary)
-            
+
             HStack {
                 summaryItem(title: "本月支出", amount: viewModel.monthlyExpense, color: .orange)
                 Spacer()
@@ -32,8 +33,14 @@ struct OverviewCardView: View {
         .background(Color(.secondarySystemGroupedBackground))
         .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         .shadow(color: .black.opacity(0.04), radius: 8, x: 0, y: 4)
+        .onAppear {
+            viewModel.startObservingMonthlyTotals(in: database)
+        }
+        .onDisappear {
+            viewModel.stopObservingMonthlyTotals()
+        }
     }
-    
+
     private func summaryItem(title: String, amount: Decimal, color: Color) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(title)
@@ -44,4 +51,8 @@ struct OverviewCardView: View {
                 .foregroundStyle(color)
         }
     }
+}
+
+#Preview {
+    OverviewCardView()
 }
